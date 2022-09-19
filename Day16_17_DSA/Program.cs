@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Choose an option ");
-            Console.WriteLine("1.Permutations of string");
+            Console.WriteLine("1.Permutations of string\n2.Binary search");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -24,6 +24,10 @@
                     string arr2 = Console.ReadLine();
                     CheckArrayString.CheckString(arr1, arr2);
                     Console.WriteLine("string is" + CheckArrayString.CheckString(arr1, arr2));
+                    break;
+
+                    case 2:
+                    BinarySearch.SearchWord();
                     break;
             }
         }
